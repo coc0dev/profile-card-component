@@ -1,0 +1,121 @@
+body {
+  background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: right 50vw bottom 45vh, left 47vw top 55vh;
+  background-color: hsl(185, 75%, 39%);
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
+  color: hsl(229, 23%, 23%);
+}
+
+.box {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 375px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 10px 30px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.box-bg {
+  width: 100%;
+  background-size: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.avatar {
+  border: 5px solid white;
+  border-radius: 100px;
+  display: flex;
+  position: relative;
+  margin-top: -55px;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.age {
+  color: hsl(227, 10%, 46%);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.location {
+  font-size: 15px;
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+}
+
+hr {
+  width: 100%;
+  border: 1px 0 0 0 solid hsl(0, 0%, 59%);
+  margin: 0;
+  padding: 0;
+  opacity: 30%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.socials {
+  display: flex;
+  min-width: 275px;
+  justify-content: space-between;
+}
+
+.socials h2 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.socials p {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(0, 0%, 59%);
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: rgb(216, 216, 216);
+  font-weight: 600;
+}
+
+.footer a:hover {
+  color:hsl(0, 1%, 76%)
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-position: right 48vw bottom 40vh, left 40vw top 45vh;
+  }
+}
